@@ -6,7 +6,7 @@ export default class AppHeader extends React.Component {
   render() {
     return (
       <Header
-        backGroundColor={'#45690C'}
+        backGroundColor={'#0157B1'}
         centerComponent={{
           text: 'POCKET DICTIONARY APP',
           style: { color: '#FFFFFF' },

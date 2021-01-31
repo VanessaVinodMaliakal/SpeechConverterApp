@@ -17,10 +17,11 @@ export default class App extends React.Component{
   render(){
     return (
    <View style={styles.container}>
-     <AppHeader />
+      <AppHeader />
       <Image 
-        source={{uri:'https://www.shareicon.net/data/128x128/2015/08/06/80805_face_512x512.png',}}>
-     </Image>
+        source={require('./assets/speak.png')}
+        style={{width:200,height:200}}>
+      </Image>
      <TextInput 
      style={styles.inputBox}
      placeholder='Enter the word'
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
       borderWidth: 4,
   }, 
   button:{
-      width: '10%',
+      width: 150,
       height: 55,
       alignSelf: 'center',
       padding: 10,
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
   },
   styleText: {
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: 'bold',
   },
 })
